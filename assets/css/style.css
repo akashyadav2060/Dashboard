@@ -1,0 +1,182 @@
+@import url(./reset.css);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+:root{
+    --primary-font: "Poppins", sans-serif;
+    --body-bg: #f3f3f9;
+    --body-text-color: rgb(31, 37, 41);
+    --primary-color: rgb(64, 81, 137);
+    --gray-text:rgba(255, 255, 255, 0.5);
+    --box-shadow: 0 1px 2px rgba(56, 65, 74, 0.15);
+    --grey-text: rgb(135, 138, 153);
+
+
+}
+
+body{
+    background-color: var(--body-bg);
+    font-family: var(--primary-font);
+    color: var(--body-text-color);
+    font-size: 13px;
+}
+a{
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-style: none;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+    
+}
+.form-item label{
+    font-weight: 500;
+    line-height: 26px;
+
+}
+.form-item label span{
+    color: red;
+}
+.form-item input[type="email"],
+.form-item input[type="password"],
+.form-item input[type="text"],
+.form-item input[type="number"],
+.form-item input[type="tel"]{
+    border: 1px solid rgb(180, 186, 208);
+    padding: 8px 14px;
+    border-radius: 4px;
+    line-height: 19px;
+    font-family: var(--primary-font);
+}
+::placeholder{
+    color:var(--grey-text); 
+    font-family: var(--primary-font);
+}
+.primary-btn{
+    background-color: rgb(10, 179, 156);
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 14px;
+    line-height: 19px;
+    border: 1px solid rgb(180, 186, 208);
+
+}
+.primary-btn:hover{
+    background-color: #099885;
+    transition: 0.3s ease-in-out;
+}
+
+    /* Auth Common  */
+.auth-bg{
+    background-image: url(https://themesbrand.com/velzon/html/master/assets/images/auth-one-bg.jpg);
+    background-position: center;
+    height: 380px;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+.auth-overlay{
+    background-image: linear-gradient(to right, #364574, #405189);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+}
+.shape{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    fill: var(--body-bg);
+}
+.shape > svg{
+    fill: var(--body-bg);
+    width: 100%;
+    height: auto;
+    display:block;
+}
+.auth-outer-wrapper{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 48px;
+}
+.auth-inner-wrapper{
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    padding-top: 48px;
+}
+.auth-inner-wrapper img{
+    height: 20px;
+    width: auto;
+}
+.auth-inner-wrapper h4{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--gray-text);
+    font-family: var(--primary-font);
+    margin: 16px 0;
+}
+.auth-footer p{
+    font-size: 13px;
+    margin: 10px 0;
+
+}
+.auth-footer p:last-child{
+    color: var(--grey-text);
+}
+.auth-box{
+    background-color: white;
+    border-radius: 4px;
+    padding: 24px;
+    box-sizing: border-box;
+    box-shadow: var(--box-shadow) ;
+    margin-top: 48px;
+}
+.auth-box h2{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin: 10px 0;
+
+}
+.auth-box .intro{
+    font-weight: 400;
+    color: var(--grey-text);
+    margin-bottom: 16px;
+}
+.auth-box form{
+    margin-top: 24px;
+    text-align: left;
+}
+.auth-box form p{
+    color: var(--grey-text);
+    font-style: italic;
+    margin: 10px 0 ;
+}
+.auth-box .form-item p a{
+    font-style: normal;
+}
+.auth-box button{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 24px;
+}
+
+
+/* END AUTH COMMON */
+
+/*start Sign Up*/
+
+
+/* END SIGN UP  */
